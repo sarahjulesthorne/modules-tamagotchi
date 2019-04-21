@@ -1,6 +1,7 @@
 import '../styles/main.scss';
+import utils from './helpers/utils';
 
 const init = () => {
-  console.error('Hey there!');
+  utils.printToDom('app', 'Hello my person');
 };
 init();
