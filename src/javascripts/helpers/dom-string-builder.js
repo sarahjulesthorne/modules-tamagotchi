@@ -22,10 +22,8 @@ const quadDomStringBuilder = (arrayToPrint, divToDisplay) => {
 
 const headerDomStringBuilder = () => {
   let domString = '';
-  domString += '<header>';
-  domString += '<h1>My Tamagotchi</h1>';
-  domString += '</header>';
-  utils.printToDom('app', domString);
+  domString = '<h1 page-title>My Tamagotchi</h1>';
+  utils.printHeaderToDom('app', domString);
 };
 
 export default {

@@ -17,6 +17,7 @@ const getData = () => {
 };
 
 const init = () => {
+  domStringBuilders.headerDomStringBuilder();
   getData();
 };
 init();
