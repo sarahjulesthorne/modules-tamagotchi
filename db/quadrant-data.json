@@ -1,0 +1,88 @@
+{
+  "quadrants": [
+    {
+      "quadName": "Eat",
+      "quadDivId": "eat",
+      "scoreDivId": "eatScoreDiv",
+      "quadScoreVar": "full",
+      "quadScoreValue": 100,
+      "quadrantButtons": [
+        {
+          "buttonId": "chocolateButton",
+          "buttonName": "Chocolate!",
+          "buttonValue": 10,
+          "buttonClass": "eat-quadrant-button quadrant-button"
+        },
+        {
+          "buttonId": "eggplantButton",
+          "buttonName": "Eggplant",
+          "buttonValue": -3,
+          "buttonClass": "eat-quadrant-button quadrant-button"
+        }
+      ]
+    },
+    {
+      "quadName": "Play",
+      "quadDivId": "play",
+      "scoreDivId": "playScoreDiv",
+      "quadScoreVar": "fun",
+      "quadScoreValue": 50,
+      "quadrantButtons": [
+        {
+          "buttonId": "exploreButton",
+          "buttonName": "Explore!",
+          "buttonValue": 50,
+          "buttonClass": "play-quadrant-button quadrant-button"
+        },
+        {
+          "buttonId": "wheelButton",
+          "buttonName": "Run In Wheel",
+          "buttonValue": 2,
+          "buttonClass": "play-quadrant-button quadrant-button"
+        }
+      ]
+    },
+    {
+      "quadName": "Fight",
+      "quadDivId": "fight",
+      "scoreDivId": "fightScoreDiv",
+      "quadScoreVar": "strength",
+      "quadScoreValue": 100,
+      "quadrantButtons": [
+        {
+          "buttonId": "runButton",
+          "buttonName": "Run Away!",
+          "buttonValue": 1,
+          "buttonClass": "fight-quadrant-button quadrant-button"
+        },
+        {
+          "buttonId": "violenceButton",
+          "buttonName": "Rage Poop",
+          "buttonValue": -10,
+          "buttonClass": "fight-quadrant-button quadrant-button"
+        }
+      ]
+    },
+    {
+      "quadName": "Sleep",
+      "quadDivId": "sleep",
+      "scoreDivId": "sleepScoreDiv",
+      "quadScoreVar": "energy",
+      "quadScoreValue": 50,
+      "quadrantButtons": [
+        {
+          "buttonId": "napButton",
+          "buttonName": "Take A Nap",
+          "buttonValue": 50,
+          "buttonClass": "sleep-quadrant-button quadrant-button"
+        },
+        {
+          "buttonId": "slumberButton",
+          "buttonName": "Enjoy Deep Slumber",
+          "buttonValue": 60,
+          "buttonClass": "sleep-quadrant-button quadrant-button"
+        }
+      ]
+    }
+  ]
+}
