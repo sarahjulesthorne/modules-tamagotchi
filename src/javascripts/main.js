@@ -1,25 +1,15 @@
 import '../styles/main.scss';
-import data from './helpers/data/quadrant-data';
+import dataGetters from './helpers/data/get-quadrant-data';
 import domStringBuilders from './helpers/dom-string-builder';
 import eventListeners from './helpers/event-listener';
 
-let quadrants = [];
-
-const getData = () => {
-  data.getQuadrantJs()
-    .then((response) => {
-      const quadrantsArray = response.data.quadrants;
-      quadrants = quadrantsArray;
-      domStringBuilders.quadDomStringBuilder(quadrants, 'eat');
-      eventListeners.buttonEventListener();
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+const getData = (quadrantArray) => {
+  domStringBuilders.quadDomStringBuilder(quadrantArray, 'eat');
+  eventListeners.buttonEventListener();
 };
 
 const init = () => {
   domStringBuilders.headerDomStringBuilder();
-  getData();
+  dataGetters.getQuadrantData(getData);
 };
 init();
