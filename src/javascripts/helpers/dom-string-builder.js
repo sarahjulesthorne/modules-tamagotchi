@@ -11,7 +11,7 @@ const quadDomStringBuilder = (arrayToPrint, divToDisplay) => {
       domString += `<div class="${quadrant.quadDivId}-button-container quadrant-button-container" id="${quadrant.quadDivId}ButtonContainer">`;
       quadrant.quadrantButtons.forEach((button) => {
         domString += `<div class="button-container ${quadrant.quadDivId}-button-container" id="${quadrant.buttonId}Container">`;
-        domString += `<button class="${button.buttonClass}" id="${button.buttonId}">${button.buttonName}</button>`;
+        domString += `<button class="${button.buttonClass}" name="${button.buttonNameAttribute}" id="${button.buttonId}">${button.buttonName}</button>`;
         domString += '</div>';
       });
       domString += '</div>';

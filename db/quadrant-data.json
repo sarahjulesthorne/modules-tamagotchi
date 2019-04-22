@@ -7,12 +7,14 @@
       "quadScoreValue": 100,
       "quadrantButtons": [{
           "buttonId": "chocolateButton",
+          "buttonNameAttribute": "eatQuadrantButton",
           "buttonName": "Chocolate!",
           "buttonValue": 10,
           "buttonClass": "eat-quadrant-button quadrant-button"
         },
         {
           "buttonId": "eggplantButton",
+          "buttonNameAttribute": "eatQuadrantButton",
           "buttonName": "Eggplant",
           "buttonValue": -3,
           "buttonClass": "eat-quadrant-button quadrant-button"
@@ -27,12 +29,14 @@
       "quadScoreValue": 50,
       "quadrantButtons": [{
           "buttonId": "exploreButton",
+          "buttonNameAttribute": "playQuadrantButton",
           "buttonName": "Explore!",
           "buttonValue": 50,
           "buttonClass": "play-quadrant-button quadrant-button"
         },
         {
           "buttonId": "wheelButton",
+          "buttonNameAttribute": "playQuadrantButton",
           "buttonName": "Run In Wheel",
           "buttonValue": 2,
           "buttonClass": "play-quadrant-button quadrant-button"
@@ -47,12 +51,14 @@
       "quadScoreValue": 100,
       "quadrantButtons": [{
           "buttonId": "runButton",
+          "buttonNameAttribute": "fightQuadrantButton",
           "buttonName": "Run Away!",
           "buttonValue": 1,
           "buttonClass": "fight-quadrant-button quadrant-button"
         },
         {
           "buttonId": "violenceButton",
+          "buttonNameAttribute": "fightQuadrantButton",
           "buttonName": "Rage Poop",
           "buttonValue": -10,
           "buttonClass": "fight-quadrant-button quadrant-button"
@@ -67,12 +73,14 @@
       "quadScoreValue": 50,
       "quadrantButtons": [{
           "buttonId": "napButton",
+          "buttonNameAttribute": "sleepQuadrantButton",
           "buttonName": "Take A Nap",
           "buttonValue": 50,
           "buttonClass": "sleep-quadrant-button quadrant-button"
         },
         {
           "buttonId": "slumberButton",
+          "buttonNameAttribute": "sleepQuadrantButton",
           "buttonName": "Enjoy Deep Slumber",
           "buttonValue": 60,
           "buttonClass": "sleep-quadrant-button quadrant-button"
