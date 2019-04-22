@@ -11,6 +11,6 @@ import domStringBuilders from './helpers/dom-string-builder';
 
 const init = () => {
   domStringBuilders.headerDomStringBuilder();
-  dataGetters.getQuadrantData(fullQuadrants.fullQuadrantLoad);
+  dataGetters.getQuadrantData(fullQuadrants.fullQuadrantLoad, 'eatScoreDiv');
 };
 init();
