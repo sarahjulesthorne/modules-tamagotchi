@@ -2,12 +2,12 @@ import data from './quadrant-data';
 
 let quadrants = [];
 
-const getQuadrantData = (quadrantFunction) => {
+const getQuadrantData = (quadrantFunction, selectedScoreDiv) => {
   data.getQuadrantJs()
     .then((response) => {
       const quadrantsArray = response.data.quadrants;
       quadrants = quadrantsArray;
-      quadrantFunction(quadrants);
+      quadrantFunction(quadrants, selectedScoreDiv);
     })
     .catch((error) => {
       console.error(error);
