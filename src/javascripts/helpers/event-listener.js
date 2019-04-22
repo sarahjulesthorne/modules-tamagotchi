@@ -6,6 +6,12 @@ const buttonEventListener = () => {
     button.addEventListener('click', (e) => {
       if (e.target.name === 'eatQuadrantButton') {
         utils.printToDom('sleep', e.target.id);
+      } else if (e.target.name === 'playQuadrantButton') {
+        console.error(e.target.id);
+      } else if (e.target.name === 'fightQuadrantButton') {
+        console.error(e.target.id);
+      } else if (e.target.name === 'sleepQuadrantButton') {
+        console.error(e.target.id);
       }
     });
   });
