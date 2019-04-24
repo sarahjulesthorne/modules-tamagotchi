@@ -13,7 +13,9 @@ const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
   selectedArray.forEach((quadrant) => {
     const buttons = quadrant.quadrantButtons;
     const filteredButtons = buttons.filter(b => e.target.id === b.buttonId);
-    selectedButtonValue = filteredButtons[0].buttonValue;
+    if (filteredButtons.length) {
+      selectedButtonValue = filteredButtons[0].buttonValue;
+    }
 
     // quadrant.quadrantButtons.forEach((button) => {
     //   if (e.target.id === button.buttonId) {
