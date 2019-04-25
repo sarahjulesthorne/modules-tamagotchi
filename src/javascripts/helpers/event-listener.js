@@ -1,22 +1,26 @@
-import utils from './utils';
+/* module creates button event listener to be called in quadrant build/listener module function,
+which is then called in get-quadrant-data,
+which is finally called on page load in main.js */
+// imports
+import scoreChangers from './score-changer';
 
-const buttonEventListener = () => {
+/* function adds event listeners to quadrant score buttons.
+Passes in an array and a score div id
+creates array from collection of score buttons by class name
+loops over array and adds listener to each
+Both parameters are passed in as arguments to scoreChanger function,
+which is called on each button click */
+
+const buttonEventListener = (selectedArray, selectedScoreDiv) => {
   const buttonsArray = Array.from(document.getElementsByClassName('quadrant-button'));
   buttonsArray.forEach((button) => {
     button.addEventListener('click', (e) => {
-      if (e.target.name === 'eatQuadrantButton') {
-        utils.printToDom('sleep', e.target.id);
-      } else if (e.target.name === 'playQuadrantButton') {
-        console.error(e.target.id);
-      } else if (e.target.name === 'fightQuadrantButton') {
-        console.error(e.target.id);
-      } else if (e.target.name === 'sleepQuadrantButton') {
-        console.error(e.target.id);
-      }
+      scoreChangers.scoreChanger(e, selectedArray, selectedScoreDiv);
     });
   });
 };
 
+// exports
 export default {
   buttonEventListener,
 };

@@ -1,4 +1,10 @@
+/* module creates header and quadrant domStrings
+to be called in main.js and quadrant build/listener modules, respectively */
+// imports
 import utils from './utils';
+
+/* function creates domString for designated quadrant.
+passes in array to be used in loop and div to be passed into print function */
 
 const quadDomStringBuilder = (arrayToPrint, divToDisplay) => {
   let domString = '';
@@ -20,12 +26,16 @@ const quadDomStringBuilder = (arrayToPrint, divToDisplay) => {
   utils.printToDom(divToDisplay, domString);
 };
 
+/* function creates heading in domString
+passes string into print function which appends header to DOM
+and passes in domString as innerHTML */
 const headerDomStringBuilder = () => {
   let domString = '';
   domString = '<h1 page-title>My Tamagotchi</h1>';
   utils.printHeaderToDom('app', domString);
 };
 
+// exports
 export default {
   quadDomStringBuilder,
   headerDomStringBuilder,
