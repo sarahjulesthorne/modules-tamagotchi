@@ -1,14 +1,22 @@
+/* module creates scoreChanger function
+to be called in event-listener function when button is clicked */
+// imports
 import utils from './utils';
 
-// const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
-// console.error(e.target.idselectedArray);
-// console.error(selectedScoreDiv);
-// console.error(selectedArray);
-// };
+/* Function changes inner HTML of score div based on value of clicked button
+passes in parameters e, selectedArray, and selectedScoreDiv
+initializes empty variable for value of clicked button
+assigns parsed integer value of score div inner HTML to variable scoreValue
+loops over selectedArray and assigns each quadrants buttons array to a variable
+filters buttons array to select only buttons objects whose id match the id of the buttonc clicked
+if filter results array has length,
+assigns value of first item in array to button value variable from top of function
+adds button value to initial scoreValue
+if result is <= 100, prints result to DOM in score div
+if > 100, prints 100 to score div */
 
 const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
   let selectedButtonValue = '';
-  // let selectedScoreDiv = '';
   const scoreValue = parseInt(String(document.getElementById(selectedScoreDiv).innerHTML), 10);
   selectedArray.forEach((quadrant) => {
     const buttons = quadrant.quadrantButtons;
@@ -16,12 +24,6 @@ const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
     if (filteredButtons.length) {
       selectedButtonValue = filteredButtons[0].buttonValue;
     }
-
-    // quadrant.quadrantButtons.forEach((button) => {
-    //   if (e.target.id === button.buttonId) {
-    //     selectedScoreDiv = quadrant.scoreDivId;
-    //   }
-    // });
   });
   const finalScore = scoreValue + selectedButtonValue;
   if (finalScore <= 100) {
@@ -31,6 +33,7 @@ const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
   }
 };
 
+// exports
 export default {
   scoreChanger,
 };
