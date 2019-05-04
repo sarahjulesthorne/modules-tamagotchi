@@ -1,0 +1,10 @@
+$eat-background: lightblue;
+$play-background: #98fb98;
+$fight-background: blanchedalmond;
+$sleep-background: lightgray;
+$quadrant-font: black;
+$button-font: white;
+$eat-button-background: darkblue;
+$play-button-background: darkGreen;
+$fight-button-background: #654321;
+$sleep-button-background: black;

@@ -5,6 +5,7 @@ Arguments will be made explicit in main.js */
 
 import domStringBuilders from '../../helpers/dom-string-builder';
 import listeners from '../../helpers/event-listener';
+import './play-quadrant.scss';
 
 /* function which passes in array and div id.
 selectedArray gets passed into quadDomStringBuilder function
