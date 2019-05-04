@@ -4,6 +4,9 @@ Builds all initial content and makes arguments explicit or score changer functio
 
 import '../styles/main.scss';
 import fullQuadrants from './components/full/full-quadrant';
+import playQuadrants from './components/play/play-quadrant';
+import fightQuadrants from './components/fight/fight-quadrant';
+import sleepQuadrants from './components/sleep/sleep-quadrant';
 import dataGetters from './helpers/data/get-quadrant-data';
 import domStringBuilders from './helpers/dom-string-builder';
 
@@ -14,5 +17,8 @@ import domStringBuilders from './helpers/dom-string-builder';
 const init = () => {
   domStringBuilders.headerDomStringBuilder();
   dataGetters.getQuadrantData(fullQuadrants.fullQuadrantLoad, 'eatScoreDiv');
+  dataGetters.getQuadrantData(playQuadrants.playQuadrantLoad, 'playScoreDiv');
+  dataGetters.getQuadrantData(fightQuadrants.fightQuadrantLoad, 'fightScoreDiv');
+  dataGetters.getQuadrantData(sleepQuadrants.sleepQuadrantLoad, 'sleepScoreDiv');
 };
 init();
