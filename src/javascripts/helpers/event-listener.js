@@ -4,9 +4,10 @@ which is finally called on page load in main.js */
 // imports
 import scoreChangers from './score-changer';
 
-/* function adds event listeners to quadrant score buttons.
+/* function adds event listeners to  score buttons by quadrant.
 Passes in an array and a score div id
-creates array from collection of score buttons by class name
+creates arrays from collection of score buttons by class name and by quadrant
+uses switch statement to determine condition in which each quadrant's listeners will be added.
 loops over array and adds listener to each
 Both parameters are passed in as arguments to scoreChanger function,
 which is called on each button click */
