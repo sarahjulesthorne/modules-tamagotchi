@@ -1,11 +1,11 @@
 @import './_colors';
 
 #app {
-    background-color: #fffff0;
-    color: $quadrant-font;
+  background-color: #fffff0;
+  color: $quadrant-font;
   display: flex;
   flex-flow: row wrap;
-justify-content: center;
+  justify-content: center;
 
   .padding {
     padding: 1em;
@@ -22,36 +22,28 @@ justify-content: center;
     margin-bottom: 30px;
   }
 
-.quad {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 40%;
-  margin: 0px 15px 30px 15px;
-
-  .quadrant-title-container {
+  .quad {
     display: flex;
     flex-flow: column nowrap;
-    width: 80%;
-    margin: 0 10% 0 10%;
-    
-    .quadrant-title {
+    justify-content: center;
+    width: 40%;
+    margin: 0px 15px 30px 15px;
+
+    .quadrant-title-container {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 0 10% 0 10%;
       font-size: 200%;
     }
 
-    .quadrant-score {
-      font-size: 200%;
+    .quadrant-button-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+
+      .quadrant-button {
+        color: $button-font;
+      }
     }
-
-  }
-
-.quadrant-button-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  .quadrant-button {
-    color: $button-font;
   }
 }
-}
-  }
