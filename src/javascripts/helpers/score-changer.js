@@ -26,6 +26,7 @@ const scoreChanger = (e, selectedArray, selectedScoreDiv) => {
     }
   });
   const finalScore = scoreValue + selectedButtonValue;
+
   if (finalScore <= 100) {
     utils.printToDom(selectedScoreDiv, finalScore);
   } else if (finalScore > 100) {

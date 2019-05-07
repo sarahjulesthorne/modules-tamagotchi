@@ -14,6 +14,7 @@ const printHeaderToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   const prepend = document.createElement('header');
   prepend.innerHTML = textToPrint;
+  prepend.classList.add('page-header');
   selectedDiv.prepend(prepend);
 };
 
