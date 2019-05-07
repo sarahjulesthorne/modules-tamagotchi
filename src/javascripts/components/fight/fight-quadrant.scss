@@ -3,7 +3,8 @@
 #fight {
   background-color: $fight-background;
   border: 5px solid $fight-button-background;
-.quadrant-button {
-  background-color: $fight-button-background;
-}
+
+  .quadrant-button {
+    background-color: $fight-button-background;
+  }
 }

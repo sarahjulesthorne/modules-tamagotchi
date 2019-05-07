@@ -3,7 +3,8 @@
 #sleep {
   background-color: $sleep-background;
   border: 5px solid $sleep-button-background;
-.quadrant-button {
-  background-color: $sleep-button-background;
-}
+
+  .quadrant-button {
+    background-color: $sleep-button-background;
+  }
 }
