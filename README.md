@@ -1,4 +1,5 @@
 # Modules Tamagotchi  
+Exercise in Webpack, SASS, and modules  
 ## Description  
 Project creates sample tamagotchi virtual pet.  
 Each quadrant offers a different way to interact with your virtual pet.  
@@ -16,5 +17,3 @@ Personal Take-away was that I need to write less convoluted code, but given my s
 * To make a production build of this project, in terminal type `npm run build`--creates folder called build with all necessary minified code  
 ## Author  
 Sarah Thorne  
-
-Exercise in Webpack, SASS, and modules
